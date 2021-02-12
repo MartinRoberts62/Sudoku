@@ -1,0 +1,241 @@
+object Form_AlternativeGrid: TForm_AlternativeGrid
+  Left = 1326
+  Height = 367
+  Top = 65
+  Width = 413
+  BorderIcons = [biSystemMenu, biMinimize]
+  Caption = 'Alternative Grid'
+  ClientHeight = 367
+  ClientWidth = 413
+  OnActivate = FormActivate
+  Position = poScreenCenter
+  LCLVersion = '2.0.10.0'
+  object GroBox_CharacterGrid: TGroupBox
+    Left = 32
+    Height = 368
+    Top = 16
+    Width = 352
+    Caption = 'Character Grid'
+    ClientHeight = 348
+    ClientWidth = 348
+    TabOrder = 0
+    object GroBox_A_to_I_Characters: TGroupBox
+      Left = 24
+      Height = 160
+      Top = 16
+      Width = 300
+      Caption = 'A to I Characters'
+      ClientHeight = 140
+      ClientWidth = 296
+      TabOrder = 0
+      object RadBut_A_to_I_Characters: TRadioButton
+        Left = 16
+        Height = 19
+        Top = 32
+        Width = 20
+        OnClick = RadBut_A_to_I_CharactersClick
+        TabOrder = 0
+      end
+      object Edi_A_to_I_Characters: TEdit
+        Left = 40
+        Height = 23
+        Top = 32
+        Width = 20
+        Enabled = False
+        MaxLength = 1
+        TabOrder = 1
+        Text = 'A'
+      end
+      object But_A_to_I_OK: TButton
+        Left = 128
+        Height = 25
+        Top = 96
+        Width = 99
+        Caption = 'OK'
+        Enabled = False
+        ModalResult = 6
+        OnClick = But_A_to_I_OKClick
+        TabOrder = 2
+      end
+      object StrGri_A_to_I_Characters: TStringGrid
+        Tag = 1
+        Left = 72
+        Height = 43
+        Top = 32
+        Width = 200
+        ColCount = 10
+        DefaultColWidth = 20
+        DefaultRowHeight = 20
+        RowCount = 10
+        ScrollBars = ssNone
+        TabOrder = 3
+        Cells = (
+          18
+          0
+          1
+          '1'
+          0
+          2
+          '2'
+          0
+          3
+          '3'
+          0
+          4
+          '4'
+          0
+          5
+          '5'
+          0
+          6
+          '6'
+          0
+          7
+          '7'
+          0
+          8
+          '8'
+          0
+          9
+          '9'
+          1
+          0
+          '1'
+          2
+          0
+          '2'
+          3
+          0
+          '3'
+          4
+          0
+          '4'
+          5
+          0
+          '5'
+          6
+          0
+          '6'
+          7
+          0
+          '7'
+          8
+          0
+          '8'
+          9
+          0
+          '9'
+        )
+      end
+    end
+    object GroBox_AlternativeCharacter: TGroupBox
+      Left = 20
+      Height = 152
+      Top = 184
+      Width = 300
+      Caption = 'Alternative Characters'
+      ClientHeight = 132
+      ClientWidth = 296
+      TabOrder = 1
+      object RadBut_Alternative_Characters: TRadioButton
+        Left = 16
+        Height = 19
+        Top = 16
+        Width = 20
+        OnClick = RadBut_Alternative_CharactersClick
+        TabOrder = 0
+      end
+      object Edi_Alternative_Characters: TEdit
+        Left = 40
+        Height = 23
+        Top = 16
+        Width = 20
+        Enabled = False
+        MaxLength = 1
+        OnKeyPress = Edi_Alternative_CharactersKeyPress
+        TabOrder = 1
+      end
+      object But_Alternative_OK: TButton
+        Left = 116
+        Height = 25
+        Top = 80
+        Width = 99
+        Caption = 'OK'
+        Enabled = False
+        ModalResult = 6
+        OnClick = But_Alternative_OKClick
+        TabOrder = 2
+      end
+      object StrGri_Alternative_Characters: TStringGrid
+        Tag = 1
+        Left = 72
+        Height = 43
+        Top = 16
+        Width = 200
+        ColCount = 10
+        DefaultColWidth = 20
+        DefaultRowHeight = 20
+        RowCount = 10
+        ScrollBars = ssNone
+        TabOrder = 3
+        Cells = (
+          18
+          0
+          1
+          '1'
+          0
+          2
+          '2'
+          0
+          3
+          '3'
+          0
+          4
+          '4'
+          0
+          5
+          '5'
+          0
+          6
+          '6'
+          0
+          7
+          '7'
+          0
+          8
+          '8'
+          0
+          9
+          '9'
+          1
+          0
+          '1'
+          2
+          0
+          '2'
+          3
+          0
+          '3'
+          4
+          0
+          '4'
+          5
+          0
+          '5'
+          6
+          0
+          '6'
+          7
+          0
+          '7'
+          8
+          0
+          '8'
+          9
+          0
+          '9'
+        )
+      end
+    end
+  end
+end
